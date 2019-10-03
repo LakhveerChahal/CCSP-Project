@@ -1,0 +1,140 @@
+.headerbg{
+    font-family: Georgia sans-serif;
+    background-color: #49274a;
+    color: white;
+}
+body{
+    background-color: #f5eef8 !important;
+}
+.bodyDiv{
+    background-color: #f5eef8;
+    font-family: serif;
+}
+#demo{
+    border: 5px solid white;
+}
+.conName h1{
+    color: white;
+    text-align: center;
+}
+.conName p{
+    text-align: center;
+    color: black;
+}
+.clgName h2{
+    text-align: center;
+    color: white;
+}
+.clgName h4{
+    text-align: center;
+}
+
+#headerNavbar li{
+    font-size: 1.3rem;
+    font-family: monospace;
+    background-image: linear-gradient(to bottom, #3a1f3b 50%, #f5eef8 50%);
+    background-position:left top;
+    background-size: 100% 200%;
+    transition:.5s ease;
+}
+#headerNavbar li:hover
+{
+    background-position: left bottom;
+}
+.navbar a{
+    color: #d2afb1;
+    transition: 0.5s ease;
+}
+.navbar a:hover{
+    color: #3a1f3b;
+}
+.mainContent p{
+    text-align:left;
+}
+.mainContent h4{
+    text-align: center;
+    background-color: #f5eef8;
+    color: #49274a;
+    font-family: monospace;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.sociallinks a{
+    color: grey;
+}
+#time{
+    font-size: 0.9em;
+    color: #debbbb;
+    font-family: monospace;
+}
+ul hr{
+    border: 2px solid lightgray;
+    border-radius: 35px;
+}
+ul li img{
+    border-radius: 5px;
+}
+.sidePics:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/*Secondary css*/
+.card a{
+    color:#234567;
+    font-size: 1.3rem;
+	font-family: monospace;
+}
+.card a:hover
+{
+    background-color: #d2afb1; 
+	transition: 0.7s ease;	
+	color:#49274a !important;
+	cursor: pointer;
+}
+.card img{
+	width:100%;
+}
+.tab-content h3{
+	font-family: monospace;
+}
+.dropdown-menu{
+	background-color: #49274a !important;
+}
+.dropdown-menu a{
+    font-family: monospace;
+	color: #d2afb1;
+}
+.dropdown-menu a:hover{
+	background-color: #f5eef8;
+}
+.dropdown-menu{
+	display: none;
+}
+.dropdown:hover .dropdown-menu{
+	display:block;
+	margin-top: 0;
+}
+
+table tr{
+	vertical-align: middle;
+	align-items: stretch;
+	width: 100%;
+}
+table td{
+	width: 50%;
+}
+.patronPage td:first-child{
+	text-align: center !important;
+}
+.patronPage td:last-child{
+	vertical-align: middle;
+}
+table td img{
+    height: 9rem;
+    widows: 9rem;
+}
+.headingStart{
+	font-family: monospace;
+	color: #49274a;
+}

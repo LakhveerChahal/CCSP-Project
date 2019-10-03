@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>| CCSP 2019 |</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#mainHeader").load("header.html");
+            $("#mainFooter").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="mainHeader"></div>
+    <div class="container bodyDiv">
+        <div class="row mt-2">
+            <div class="col-sm-12 p-2" style="background-color: white">
+                <div class="headingStart">
+                    <blockquote class="display-4" style="text-align: center">Venue and Map</blockquote>
+                </div>
+                <p>
+                    Since 1987, NIT Jalandhar has tirelessly worked for becoming one of the top technical institutions in the country. Since its inception, the institute has been associated with many of the brightest minds in India. Located between the rivers of Sutlej and Beas, Jalandhar is one of the important towns of Punjab and is known for rich educational, cultural and literary activities. Today the institution is recognized as an institute of National Importance along with the IITs and IIMs by the NIT Act. Widespread accomplishments by its esteemed Alumni, Faculty and Students has fetched NIT Jalandhar a respectable position in the National Rankings declared by NIRF, MHRD Govt. of India for 2016. The institute offers B Tech, M Tech, MBA, MSc &emp; PhD Programs in the several disciplines of Engineering, Technology and Sciences.
+                </p>
+                <div id="googleMap" style="width: 100%; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="mainFooter"></div>
+</body>
+    <script>
+        function myMap(){
+            var mapProp={
+                center: new google.maps.LatLng(31.396160, 75.535367),
+                zoom: 15
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJnuBclOeviclrpJzaXXd2Nd4Xs9D2TIQ&callback=myMap"></script>
+</html>

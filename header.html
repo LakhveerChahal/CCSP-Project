@@ -1,0 +1,86 @@
+<div class="container-fluid headerbg lead">
+    <div class="row">
+        <div class="col-sm-4 conName">
+            <h1>CCSP 2019</h1>
+            <hr style="height:0px;border:2px solid white">
+            <p style="color: white"><b>International Conference<br>on<br>Communication Computing and Signal Processing<br>December
+                    21-23,2019.</b></p>               
+        </div>
+        
+        <div class="col-sm-8">
+            <div class="clearfix">
+                <div class="float-right">
+                    <p>&nbsp;<span id="time"></span></p>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <div class="align-self-center">
+                    <img src="images/nitjlogo.png" width="100%" height="55%">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-sm p-1" style="background-color: #3a1f3b">
+        <div class="container" style="background-color: #3a1f3b">
+            <a class="navbar-brand" href="index.html" style="font-size: 1.4rem; color: #f7dc6f;">CCSP</a>
+            <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#headerNavbar">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="headerNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="tracks.html">Tracks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="submissions.html">Submission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="nav-link px-3 dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organising Committee</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="patron.html">Patron</a>
+                                <a class="dropdown-item" href="nationalcom.html">National Advisory Committee</a>
+                                <a class="dropdown-item" href="intercomm.html">International Advisory Committee</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="venue.html">Venue</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <hr class="m-0">
+<script type="text/javascript">
+    $(document).ready(function(){
+        var monthNames = [ "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December" ];
+        var timeId = $("#time");
+        var fullDate = new Date();
+        var date = fullDate.getDate()+1;
+        var month = monthNames[fullDate.getMonth()];
+        var year = fullDate.getFullYear();
+        
+        function showTime(){
+            fullDate = new Date();
+            var hours = fullDate.getHours();
+            var minutes = fullDate.getMinutes();
+            var seconds = fullDate.getSeconds();
+            timeId.html(date+" "+month+" "+year+" / "+hours+":"+minutes+":"+seconds);
+        }
+        var repeat = setInterval(showTime, 1000);
+        
+    });
+</script>
+
